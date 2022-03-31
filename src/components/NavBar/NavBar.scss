@@ -1,4 +1,5 @@
-$primary-color: #00bcd4;
+$btn-yellow: #ffc922;
+$btn-lightblue: #00bcd4;
 $dark-mode-color1: #292929;
 $dark-mode-color2: #121212;
 
@@ -25,7 +26,7 @@ $dark-mode-color2: #121212;
     padding: 0.8rem 0;
 
     &:hover {
-      color: $primary-color;
+      color: $btn-yellow;
     }
   }
 }
@@ -43,7 +44,7 @@ $dark-mode-color2: #121212;
         color: $dark-mode-color1;
 
         &:hover {
-          color: $primary-color;
+          color: $btn-yellow;
         }
       }
     }

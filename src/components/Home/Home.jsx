@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
+
 import AnimatedLetters from '../../helpers/AnimatedLetters/AnimatedLetters';
 import Avatar from './Avatar/Avatar.jsx';
 import './Home.scss';
@@ -61,9 +63,7 @@ const Home = () => {
               index={16}
             />
           </h1>
-          <h2>
-            Frontend Developer | React | JavaScript | HTML5 | CSS3 | NodeJS
-          </h2>
+          <h2>HTML5 | CSS3 | JavaScript | React | NodeJS</h2>
           <Link to='/contact' className='flat-button'>
             Contact Me
           </Link>
@@ -72,6 +72,8 @@ const Home = () => {
           <Avatar />
         </div>
       </div>
+      
+      <Loader type='ball-spin-fade-loader' />
     </div>
   );
 };

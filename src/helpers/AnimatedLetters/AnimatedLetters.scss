@@ -1,4 +1,7 @@
-$primary-color: #00bcd4;
+$btn-yellow: #ffc922;
+$btn-lightblue: #00bcd4;
+$dark-mode-color1: #292929;
+$dark-mode-color2: #121212;
 
 .text-animate {
   display: inline-block;
@@ -13,7 +16,7 @@ $primary-color: #00bcd4;
   animation-fill-mode: both;
   &:hover {
     animation: rubberBand 1s;
-    color: $primary-color;
+    color: $btn-yellow;
   }
 }
 

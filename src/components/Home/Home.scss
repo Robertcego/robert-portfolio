@@ -1,3 +1,8 @@
+$btn-yellow: #ffc922;
+$btn-lightblue: #00bcd4;
+$dark-mode-color1: #292929;
+$dark-mode-color2: #121212;
+
 .home-container {
   display: flex;
   align-items: center;
@@ -27,21 +32,21 @@ h2 {
 }
 
 .flat-button {
-  color: #ffd700;
+  color: $btn-yellow;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 4px;
   font-family: sans-serif;
   text-decoration: none;
   padding: 10px 18px;
-  border: 1px solid #ffd700;
+  border: 1px solid $btn-yellow;
   margin-top: 25px;
   float: left;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
 
   &:hover {
-    background-color: #ffd700;
-    color: #333;
+    background-color: $btn-yellow;
+    color: $dark-mode-color1;
   }
 }
