@@ -9,7 +9,7 @@ import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar>
         <div className='content-wrapper'>
           <Routes>
@@ -19,7 +19,7 @@ function App() {
           </Routes>
         </div>
       </NavBar>
-    </div>
+    </>
   );
 }
 

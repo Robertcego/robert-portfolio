@@ -72,7 +72,7 @@ const Home = () => {
           <Avatar />
         </div>
       </div>
-      
+
       <Loader type='ball-spin-fade-loader' />
     </div>
   );

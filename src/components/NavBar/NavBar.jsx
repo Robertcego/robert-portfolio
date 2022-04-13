@@ -16,15 +16,15 @@ const NavBar = ({ children }) => {
     <div className='navbar-container'>
       <div>
         <nav className='nav-container'>
-          <Link className='home-link' to='/'>
+          <NavLink className='home-link' to='/'>
             <FontAwesomeIcon icon={faHome} size='2x' title='Home' />
-          </Link>
-          <Link className='about-link' to='/about' title='About'>
+          </NavLink>
+          <NavLink className='about-link' to='/about' title='About'>
             <FontAwesomeIcon icon={faUser} size='2x' />
-          </Link>
-          <Link className='contact-link' to='/contact' title='Contact'>
+          </NavLink>
+          <NavLink className='contact-link' to='/contact' title='Contact'>
             <FontAwesomeIcon icon={faPortrait} size='2x' />
-          </Link>
+          </NavLink>
         </nav>
       </div>
       <div className='socials-container'>
