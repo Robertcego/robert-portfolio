@@ -10,15 +10,18 @@ import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <>
-      <NavBar>
-        <div className='content-wrapper'>
+      <div className='content-wrapper'>
+        <div className='navbar-container'>
+          <NavBar />
+        </div>
+        <div className='routes-container'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </div>
-      </NavBar>
+      </div>
     </>
   );
 }
