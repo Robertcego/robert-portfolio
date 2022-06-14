@@ -2,4 +2,4 @@
 
 ## WIP
 
-Bundled with @vite
+Bundled with @vitejs
