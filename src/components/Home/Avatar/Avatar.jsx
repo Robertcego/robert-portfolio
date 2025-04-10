@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import { motion } from 'framer-motion';
-import myAvatar from '../../../assets/rcg-avatar.png';
+// import myAvatar from '../../../assets/rcg-avatar.png';
 
 import './Avatar.scss';
 
@@ -19,7 +19,7 @@ const Avatar = () => {
         delay: 1.5,
       }}
     >
-      <img src={myAvatar} alt='avatar' />
+      {/* <img src={myAvatar} alt='avatar' /> */}
     </motion.div>
   );
 };
