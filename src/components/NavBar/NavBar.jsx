@@ -9,7 +9,7 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
-import { faHome, faPortrait, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faHome, faPortrait, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = ({ children }) => {
   return (
@@ -30,18 +30,18 @@ const NavBar = ({ children }) => {
       <div className='socials-container'>
         <ul>
           <li>
-            <a href='http://' target='_blank' rel='noopener noreferrer'>
+            <a href='https://github.com/Robertcego' target='_blank' rel='noopener noreferrer'>
               <FontAwesomeIcon icon={faGithub} size='2x' />
             </a>
           </li>
           <li>
-            <a href='http://' target='_blank' rel='noopener noreferrer'>
+            <a href='http://linkedin.com/in/robertcego' target='_blank' rel='noopener noreferrer'>
               <FontAwesomeIcon icon={faLinkedin} size='2x' />
             </a>
           </li>
           <li>
-            <a href='http://' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faTwitter} size='2x' />
+            <a href='https://www.codewars.com/users/Robertcego' target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon icon={faCode} size='2x' />
             </a>
           </li>
         </ul>

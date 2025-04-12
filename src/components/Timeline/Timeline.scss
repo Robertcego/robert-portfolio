@@ -73,3 +73,37 @@ $dark-mode-color3: #8d8d8d;
   border-radius: 50%;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .timeline::after {
+    display: none; // hide the vertical line
+  }
+
+  .timeline-item {
+    width: auto; // shrink width a bit for padding
+    margin: 2rem auto; // center horizontally with auto
+    padding: 1rem;
+    left: 0 !important;
+    text-align: left;
+  }
+
+  // Hide the dots
+  .timeline-item::after {
+    display: none;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    background-color: $dark-mode-color2;
+    border-radius: 18px;
+  }
+
+.timeline-content ul > li {
+  list-style: none;
+  margin: 0.5rem 0;
+//   padding-left: 1.5rem;
+  position: relative;
+  color: $dark-mode-color3;
+}
+
+}
