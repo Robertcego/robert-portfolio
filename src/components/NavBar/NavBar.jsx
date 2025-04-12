@@ -19,12 +19,12 @@ const NavBar = ({ children }) => {
           <NavLink className='home-link' to='/'>
             <FontAwesomeIcon icon={faHome} size='2x' title='Home' />
           </NavLink>
-          <NavLink className='about-link' to='/about' title='About'>
+          {/* <NavLink className='about-link' to='/about' title='About'>
             <FontAwesomeIcon icon={faUser} size='2x' />
           </NavLink>
           <NavLink className='contact-link' to='/contact' title='Contact'>
             <FontAwesomeIcon icon={faPortrait} size='2x' />
-          </NavLink>
+          </NavLink> */}
         </nav>
       </div>
       <div className='socials-container'>

@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 
 import AnimatedLetters from '../../helpers/AnimatedLetters/AnimatedLetters';
 import Avatar from './Avatar/Avatar.jsx';
+import About from '../About/About.jsx';
+
+
 import './Home.scss';
+import Timeline from '../Timeline/Timeline.jsx';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -68,12 +72,14 @@ const Home = () => {
             Contact Me
           </Link>
         </div>
-        <div className='home-avatar-container'>
+        {/* <div className='home-avatar-container'>
           <Avatar />
-        </div>
-      </div>
+        </div> */}
+        <About />
+        <Timeline />
 
-      <Loader type='ball-spin-fade-loader' />
+        <Loader type='ball-spin-fade-loader' />
+      </div>
     </div>
   );
 };

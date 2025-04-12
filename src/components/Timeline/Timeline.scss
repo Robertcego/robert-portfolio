@@ -1,0 +1,75 @@
+$btn-yellow: #ffc922;
+$btn-lightblue: #00bcd4;
+$dark-mode-color1: #292929;
+$dark-mode-color2: #121212;
+$dark-mode-color3: #8d8d8d;
+
+.timeline {
+  position: relative;
+//   max-width: 600px;
+  margin: auto;
+  padding: 2rem 0;
+  animation: fadeIn 1s 1.8s backwards;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: $btn-yellow;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Common to all timeline items */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  text-align: left;
+  color: $dark-mode-color3;
+}
+
+/* Left (odd) */
+.timeline-item:nth-child(odd) {
+  left: 0;
+  background-color: $dark-mode-color2;
+  border-radius: 18px;
+//   text-align: right;
+}
+
+.timeline-item:nth-child(odd)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -9px; /* half of dot size to center on the line */
+  width: 18px;
+  height: 18px;
+  background-color: $btn-lightblue;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Right (even) */
+.timeline-item:nth-child(even) {
+  left: 50%;
+  background-color: $dark-mode-color2;
+  border-radius: 18px;
+//   text-align: left;
+}
+
+.timeline-item:nth-child(even)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -9px; /* half of dot size to center on the line */
+  width: 18px;
+  height: 18px;
+  background-color: $btn-lightblue;
+  border-radius: 50%;
+  z-index: 1;
+}
