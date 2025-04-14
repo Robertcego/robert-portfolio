@@ -6,7 +6,6 @@ import './NavBar.scss';
 import {
   faGithub,
   faLinkedin,
-  faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
 import { faCode, faHome, faPortrait, faUser } from '@fortawesome/free-solid-svg-icons';
