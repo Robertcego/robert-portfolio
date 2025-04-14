@@ -9,5 +9,14 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     width: 100%;
-    text-align: justify;
+    // text-align: justify;
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        text-wrap: balance;
+        text-align:inherit;
+        margin: 6rem auto;
+        padding-left: 1rem;
+    }
 }
