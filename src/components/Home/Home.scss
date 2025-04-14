@@ -18,7 +18,7 @@ $dark-mode-color2: #121212;
     width: 100%;
 }
 
-h1 {
+.text-zone h1 {
   font-size: 53px;
   margin: 0;
   font-weight: 400;
@@ -54,4 +54,23 @@ h2 {
     background-color: $btn-yellow;
     color: $dark-mode-color1;
   }
+}
+
+@media (max-width: 480px) {
+  .text-zone {
+    text-wrap: balance;
+    // text-align: center;
+  }
+
+  .text-zone h1 {
+    font-size: 1.5rem;
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  .text-zone h2 {
+    font-size: 1.5rem;
+  }
+
 }
