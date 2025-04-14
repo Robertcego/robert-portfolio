@@ -54,65 +54,11 @@ $dark-mode-color2: #121212;
       }
     }
   }
+
+
 }
 
-// a {
-//       font-size: 22px;
-//       color: #4d4d4e;
-//       display: block;
-//       line-height: 51px;
-//       height: 51px;
-//       position: relative;
-//       text-decoration: none;
 
-//       i {
-//         transition: all 0.3s ease-out;
-//       }
-
-//       &:hover {
-//         color: #ffd700;
-
-//         svg {
-//           opacity: 0;
-//         }
-
-//         &:after {
-//           opacity: 1;
-//         }
-//       }
-
-//       &:after {
-//         content: '';
-//         font-size: 9px;
-//         letter-spacing: 2px;
-//         position: absolute;
-//         bottom: 0;
-//         display: block;
-//         width: 100%;
-//         text-align: center;
-//         opacity: 0;
-//         -webkit-transition: all 0.3s ease-out;
-//         transition: all 0.3s ease-out;
-//       }
-
-//       &:first-child {
-//         &:after {
-//           content: 'HOME';
-//         }
-//       }
-//     }
-
-//     a.about-link {
-//       &:after {
-//         content: 'ABOUT';
-//       }
-//     }
-
-//     a.contact-link {
-//       &:after {
-//         content: 'CONTACT';
-//       }
-//     }
 @media (max-width: 768px) {
   .navbar-container {
     top: auto;
@@ -139,4 +85,97 @@ $dark-mode-color2: #121212;
   .socials-container {
     display: none; // or move elsewhere for mobile
   }
+}
+
+
+// Mobile Portrait
+@media (max-width: 320px) {
+  .nav-container {
+    height: 3rem;
+    padding: 0.5rem;
+    
+    a {
+      font-size: 12px;
+    }
+  
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    height: 4rem;
+    padding: 0.5rem;
+    
+    a {
+      font-size: 14px;
+    }
+  }
+
+}
+
+// Mobile Landscape
+@media (max-height: 480px) and (orientation: landscape) {
+
+}
+
+// Tablet Landscape
+@media (max-height: 768px) and (orientation: landscape) {
+
+}
+
+// Small Desktop
+@media (max-width: 1024px) {
+  .navbar-container {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+
+  }
+
+  .socials-container {
+    display: none; // or move elsewhere for mobile
+  }
+
+
+}
+
+// Medium Desktop
+@media (max-width: 1280px) {
+  .navbar-container {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+
+  }
+
+  .socials-container {
+    display: none; // or move elsewhere for mobile
+  }
+
+}
+
+// Large Desktop
+@media (max-width: 1440px) {
+
+}
+
+// Extra Large Desktop
+@media (max-width: 1920px) {
+
 }

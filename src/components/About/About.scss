@@ -20,3 +20,42 @@
         padding-left: 1rem;
     }
 }
+
+// Mobile Portrait
+@media (max-width: 320px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+// Mobile Landscape
+@media (max-height: 480px) and (orientation: landscape) {
+
+}
+
+// Tablet Landscape
+@media (max-height: 768px) and (orientation: landscape) {
+
+}
+
+// Small Desktop
+@media (max-width: 1024px) {
+
+}
+
+// Medium Desktop
+@media (max-width: 1200px) {
+
+}
+
+// Large Desktop
+@media (max-width: 1440px) {
+
+}
+
+// Extra Large Desktop
+@media (max-width: 1920px) {
+
+}
