@@ -11,7 +11,7 @@ const timelineData = [
         ],
     },
     {
-        date: '2022 - 2023',
+        date: '2022 - 2024',
         title: 'Frontend Web Developer',
         company: '3M',
         description: ' Maintained the existing codebase and developed new web components following design specifications, making use of web technologies like html, css and javascript and their libraries and frameworks.',
