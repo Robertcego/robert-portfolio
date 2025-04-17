@@ -14,7 +14,8 @@ const Timeline = () => {
                         <div key={index} className='timeline-item'>
                             <div className='timeline-content'>
                                 <h2>{item.title}</h2>
-                                <span>{item.date}</span>
+                                <p>🏢{item.company}</p>
+                                <p>📅{item.date}</p>
                                 <br />
                                 <p>{item.description}</p>
                                 <ul>
