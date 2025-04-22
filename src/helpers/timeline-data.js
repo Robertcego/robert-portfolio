@@ -3,7 +3,7 @@ const timelineData = [
         date: '2025 - Current',
         title: 'Frontend Developer',
         company: 'Excel Nearshore',
-        description: 'Working as a Frontend Developer for Excel Nearshore´s client, Augeo Marketing, mantaining and creating web components for their web platform.',
+        description: 'Contributing to the development of high-performance, user-focused web applications for Augeo Marketing. My work involves building intuitive UIs with React, Next.js, and Material-UI, integrating GraphQL APIs, and maintaining scalable, accessible, and responsive codebases using JavaScript and TypeScript. I collaborate closely with cross-functional teams and use tools like Storybook and VS Code to ensure consistency and efficiency in UI development.',
 
     },
     {
