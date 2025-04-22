@@ -3,7 +3,7 @@ const timelineData = [
         date: '2025 - Current',
         title: 'Frontend Developer',
         company: 'Excel Nearshore',
-        description: 'Working as a Frontend Developer for our client, Augeo Marketing, mantaining and creating web components for their web platform.',
+        description: 'Working as a Frontend Developer for Excel Nearshore´s client, Augeo Marketing, mantaining and creating web components for their web platform.',
 
     },
     {
