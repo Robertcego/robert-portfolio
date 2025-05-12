@@ -67,7 +67,7 @@ const Home = () => {
               index={16}
             />
           </h1>
-          <h2>HTML5 | CSS3 | JavaScript | React | NodeJS</h2>
+          <h2>HTML5 | CSS3 | JavaScript | TypeScript | React | GraphQL </h2>
           <Link to='/contact' className='flat-button'>
             Contact Me
           </Link>
