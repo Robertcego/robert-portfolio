@@ -72,9 +72,6 @@ const Home = () => {
             Contact Me
           </Link>
         </div>
-        {/* <div className='home-avatar-container'>
-          <Avatar />
-        </div> */}
         <About />
         <Timeline />
 
