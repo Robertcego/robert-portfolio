@@ -21,7 +21,7 @@ const Timeline = () => {
                                 <ul>
                                     {item?.accomplishments?.map((accomplishment, index) => (
                                         <li key={index}>
-                                            <span>{accomplishment}</span>
+                                            <span>▫️{accomplishment}</span>
                                         </li>
                                     ))}
                                 </ul>
