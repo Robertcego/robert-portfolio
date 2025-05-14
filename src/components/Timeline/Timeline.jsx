@@ -20,7 +20,7 @@ const Timeline = () => {
                                 <p>{item.description}</p>
                                 <ul>
                                     {item?.accomplishments?.map((accomplishment, index) => (
-                                        <li style={{ listStyle: none }} key={index}>
+                                        <li key={index}>
                                             <span>▫️{accomplishment}</span>
                                         </li>
                                     ))}

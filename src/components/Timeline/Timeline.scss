@@ -12,6 +12,12 @@ $dark-mode-color3: #8d8d8d;
   animation: fadeIn 1s 1.8s backwards;
 }
 
+.timeline li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .timeline::after {
   content: '';
   position: absolute;
