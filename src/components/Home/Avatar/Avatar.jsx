@@ -19,7 +19,6 @@ const Avatar = () => {
         delay: 1.5,
       }}
     >
-      {/* <img src={myAvatar} alt='avatar' /> */}
     </motion.div>
   );
 };
