@@ -20,8 +20,8 @@ const Timeline = () => {
                                 <p>{item.description}</p>
                                 <ul>
                                     {item?.accomplishments?.map((accomplishment, index) => (
-                                        <li key={index}>
-                                            <span>{accomplishment}</span>
+                                        <li style={{ listStyle: none }} key={index}>
+                                            <span>▫️{accomplishment}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -29,7 +29,7 @@ const Timeline = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div >
         ) : <p>Loading...</p>
     );
 }
