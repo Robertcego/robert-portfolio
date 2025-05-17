@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../helpers/AnimatedLetters/AnimatedLetters';
 import Avatar from './Avatar/Avatar.jsx';
 import About from '../About/About.jsx';
+import Timeline from '../Timeline/Timeline.jsx';
+import Footer from '../Footer/Footer.jsx';
 
 
 import './Home.scss';
-import Timeline from '../Timeline/Timeline.jsx';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -74,7 +75,7 @@ const Home = () => {
         </div>
         <About />
         <Timeline />
-
+        <Footer />
         <Loader type='ball-spin-fade-loader' />
       </div>
     </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -8,7 +7,11 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 
-import { faCode, faHome, faPortrait, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
+const codeWarsIcon = 'https://raw.githubusercontent.com/codewars/branding/refs/heads/master/logo.png';
+
+
 
 const NavBar = ({ children }) => {
   return (
@@ -26,7 +29,7 @@ const NavBar = ({ children }) => {
           </NavLink> */}
         </nav>
       </div>
-      <div className='socials-container'>
+      {/* <div className='socials-container'>
         <ul>
           <li>
             <a href='https://github.com/Robertcego' target='_blank' rel='noopener noreferrer'>
@@ -40,11 +43,16 @@ const NavBar = ({ children }) => {
           </li>
           <li>
             <a href='https://www.codewars.com/users/Robertcego' target='_blank' rel='noopener noreferrer'>
-              <FontAwesomeIcon icon={faCode} size='2x' />
+              <img
+                src={codeWarsIcon}
+                alt='Codewars'
+                title='Codewars'
+                style={{ width: '32px', height: '32px' }}
+              />
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
       {children}
     </div>
   );
