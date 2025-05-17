@@ -10,12 +10,17 @@ $dark-mode-color3: #8d8d8d;
   margin: auto;
   padding: 2rem 0;
   animation: fadeIn 1s 1.8s backwards;
-}
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-.timeline li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  }
+}
+.timeline-content {
+  h2 {
+    color: $btn-yellow;
+  }
 }
 
 .timeline::after {
