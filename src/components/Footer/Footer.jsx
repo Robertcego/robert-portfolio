@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="footer-socials-container">
                         <ul>
                             <li>
-                                <a href='https://wwww.linkedin.com/in/robertcego' target='_blank' rel='noopener noreferrer'>
+                                <a href='https://www.linkedin.com/in/robertcego/' target='_blank' rel='noopener noreferrer'>
                                     <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt='LinkedIn' style={{ width: '48px', height: '48px' }} />
                                 </a>
                             </li>
