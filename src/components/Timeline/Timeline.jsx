@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
-import './Timeline.scss'
-import timelineData from '../../helpers/timeline-data'
+import React from 'react';
+import './Timeline.scss';
+import timelineData from '../../helpers/timeline-data';
 
 const Timeline = () => {
-
-    console.log(timelineData)
 
     return (
         timelineData ? (
