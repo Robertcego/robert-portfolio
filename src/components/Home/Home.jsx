@@ -38,9 +38,13 @@ const Home = () => {
     'r',
   ];
 
-  setTimeout(() => {
-    setLetterClass('text-animate-hover');
-  }, 4000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
 
   return (
