@@ -20,3 +20,10 @@ Bundled with @vitejs
 - React Three Fiber for 3D content
 - Leaflet for maps
 - Font Awesome icons
+
+### Sitemap
+
+This project generates a `sitemap.xml` automatically during the Vite build.
+Set the `SITE_URL` environment variable to the public domain of the site so the
+sitemap contains correct URLs. After creation, the build script attempts to ping
+Google and Bing to notify them of the new sitemap.
