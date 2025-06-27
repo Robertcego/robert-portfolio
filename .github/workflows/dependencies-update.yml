@@ -9,20 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set update branch
+        run: echo "UPDATE_BRANCH=chore/dependencies-update/$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       - uses: actions/setup-node@v3
         with:
           node-version: '20'
       - run: npm ci
       - run: npm update
-      - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: package.json package-lock.json bun.lock
-          message: 'chore: update dependencies'
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          title: 'Update dependencies'
+          commit-message: 'chore: update dependencies'
+          title: 'chore: update dependencies'
           body: 'Automated dependency update triggered by schedule.'
-          branch: dependency-updates
+          branch: ${{ env.UPDATE_BRANCH }}
 
