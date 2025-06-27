@@ -1,0 +1,28 @@
+name: Update dependencies
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  update-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm update
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: package.json package-lock.json bun.lock
+          message: 'chore: update dependencies'
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: 'Update dependencies'
+          body: 'Automated dependency update triggered by schedule.'
+          branch: dependency-updates
+
