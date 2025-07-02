@@ -41,7 +41,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add package*.json package-lock.json
+          git add package.json package-lock.json
+          echo "changed=false" >> $GITHUB_OUTPUT
           git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
