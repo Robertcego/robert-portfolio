@@ -45,6 +45,9 @@ jobs:
           echo "changed=false" >> $GITHUB_OUTPUT
           git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
 
+      - name: Set branch timestamp
+        run: echo "BRANCH_TIMESTAMP=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_ENV
+
       - name: Create Pull Request
         if: steps.git-check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v5
@@ -76,4 +79,4 @@ jobs:
             ---
             > Please merge if all checks pass and the application works as expected.
           branch: chore/deps-update-${{ github.run_id }}
-          branch-suffix: timestamp
+          branch-suffix: ${{ env.BRANCH_TIMESTAMP }}
