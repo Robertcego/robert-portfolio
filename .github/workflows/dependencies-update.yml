@@ -79,4 +79,4 @@ jobs:
             ---
             > Please merge if all checks pass and the application works as expected.
           branch: chore/deps-update-${{ github.run_id }}
-          branch-suffix: ${{ env.BRANCH_TIMESTAMP }}
+          branch-suffix: ${{ github.run_id }}
