@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    Diagrama de Dependencias - Robert Portfolio
+  </text>
+  
+  <!-- Main entry point -->
+  <g transform="translate(550, 80)">
+    <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#007bff" stroke="#0056b3" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">main.jsx</text>
+  </g>
+  
+  <!-- App.jsx -->
+  <g transform="translate(550, 160)">
+    <rect x="-40" y="-15" width="80" height="30" rx="5" fill="#28a745" stroke="#1e7e34" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">App.jsx</text>
+  </g>
+  
+  <!-- Components Level 1 -->
+  <g transform="translate(350, 240)">
+    <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#ffc107" stroke="#e0a800" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">Home.jsx</text>
+  </g>
+  
+  <g transform="translate(750, 240)">
+    <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#ffc107" stroke="#e0a800" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">NavBar.jsx</text>
+  </g>
+  
+  <!-- Components Level 2 -->
+  <g transform="translate(150, 320)">
+    <rect x="-45" y="-15" width="90" height="30" rx="5" fill="#17a2b8" stroke="#117a8b" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">About.jsx</text>
+  </g>
+  
+  <g transform="translate(280, 320)">
+    <rect x="-45" y="-15" width="90" height="30" rx="5" fill="#17a2b8" stroke="#117a8b" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Avatar.jsx</text>
+  </g>
+  
+  <g transform="translate(420, 320)">
+    <rect x="-50" y="-15" width="100" height="30" rx="5" fill="#17a2b8" stroke="#117a8b" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Timeline.jsx</text>
+  </g>
+  
+  <g transform="translate(550, 320)">
+    <rect x="-45" y="-15" width="90" height="30" rx="5" fill="#17a2b8" stroke="#117a8b" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Footer.jsx</text>
+  </g>
+  
+  <!-- Helper components -->
+  <g transform="translate(350, 400)">
+    <rect x="-70" y="-15" width="140" height="30" rx="5" fill="#6f42c1" stroke="#59359a" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">AnimatedLetters.jsx</text>
+  </g>
+  
+  <g transform="translate(520, 400)">
+    <rect x="-60" y="-15" width="120" height="30" rx="5" fill="#6f42c1" stroke="#59359a" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">timeline-data.js</text>
+  </g>
+  
+  <!-- CSS Files -->
+  <g transform="translate(100, 480)">
+    <rect x="-35" y="-12" width="70" height="24" rx="3" fill="#fd7e14" stroke="#e55a00" stroke-width="1"/>
+    <text x="0" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">*.scss</text>
+  </g>
+  
+  <!-- Arrows -->
+  <!-- main.jsx to App.jsx -->
+  <line x1="600" y1="110" x2="600" y2="145" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- App.jsx to components -->
+  <line x1="550" y1="175" x2="400" y2="225" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="175" x2="750" y2="225" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Home.jsx to sub-components -->
+  <line x1="350" y1="255" x2="200" y2="305" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="255" x2="280" y2="305" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="255" x2="420" y2="305" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="255" x2="550" y2="305" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- To helpers -->
+  <line x1="350" y1="255" x2="350" y2="385" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="420" y1="335" x2="520" y2="385" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 600)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Leyenda:</text>
+    <rect x="0" y="10" width="20" height="15" fill="#007bff"/>
+    <text x="25" y="22" font-family="Arial, sans-serif" font-size="11" fill="#333">Entry Point</text>
+    <rect x="0" y="30" width="20" height="15" fill="#28a745"/>
+    <text x="25" y="42" font-family="Arial, sans-serif" font-size="11" fill="#333">Main App</text>
+    <rect x="0" y="50" width="20" height="15" fill="#ffc107"/>
+    <text x="25" y="62" font-family="Arial, sans-serif" font-size="11" fill="#333">Page Components</text>
+    <rect x="150" y="30" width="20" height="15" fill="#17a2b8"/>
+    <text x="175" y="42" font-family="Arial, sans-serif" font-size="11" fill="#333">UI Components</text>
+    <rect x="150" y="50" width="20" height="15" fill="#6f42c1"/>
+    <text x="175" y="62" font-family="Arial, sans-serif" font-size="11" fill="#333">Helpers/Utils</text>
+    <rect x="150" y="10" width="20" height="15" fill="#fd7e14"/>
+    <text x="175" y="22" font-family="Arial, sans-serif" font-size="11" fill="#333">Styles</text>
+  </g>
+  
+  <!-- File count info -->
+  <g transform="translate(900, 600)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Estadísticas:</text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="11" fill="#333">• Archivos JSX: 9</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="11" fill="#333">• Archivos JS: 2</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="11" fill="#333">• Archivos SCSS: ~12</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="11" fill="#333">• Total componentes: 11</text>
+  </g>
+</svg>
