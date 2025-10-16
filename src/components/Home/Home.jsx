@@ -53,8 +53,17 @@ const Home = () => {
         <div className='text-zone'>
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _11`}>i</span>
-            <span className={`${letterClass} _12`}>👋🏽</span>
+            <span className={`${letterClass} _11`}>e</span>
+            <span className={`${letterClass} _11`}>l</span>
+            <span className={`${letterClass} _11`}>l</span>
+            <span className={`${letterClass} _11`}>o</span>
+            <span className={`${letterClass} _11`}></span>
+            <span className={`${letterClass} _11`}>t</span>
+            <span className={`${letterClass} _11`}>h</span>
+            <span className={`${letterClass} _11`}>e</span>
+            <span className={`${letterClass} _11`}>r</span>
+            <span className={`${letterClass} _11`}>e</span>
+            <span className={`${letterClass} _12`}>🖖🏽👽</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'</span>
@@ -73,7 +82,7 @@ const Home = () => {
             />
           </h1>
           <h2>HTML5 | CSS3 | JavaScript | TypeScript | React | GraphQL </h2>
-          <Link to='/contact' className='flat-button'>
+          <Link to='https://www.linkedin.com/in/robertcego/' target='_blank' className='flat-button'>
             Contact Me
           </Link>
         </div>

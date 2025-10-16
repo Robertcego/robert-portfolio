@@ -4,14 +4,12 @@ const timelineData = [
     title: 'Frontend Developer',
     company: 'Excel Nearshore',
     description:
-      'Contributing to the development of high-performance, user-focused web applications for Augeo Marketing.',
+      'Contributed to a critical backend refactor (Node.js, TypeScript, Express) by rearchitecting modules and extracting services within the main application. Simultaneously, I developed robust APIs to facilitate seamless communication between this refactored backend and a new microservice for budget management. This work involved significant learning and application of new architectural patterns and backend development best practices, ultimately enhancing Augeo´s engagement platform for a new budgets feature.',
     accomplishments: [
-      'Building and maintaining responsive, high-performance web applications for Augeo’s engagement platform using React, Next.js, TypeScript, and Material UI.',
-      'Collaborating with designers, backend engineers, and QA to craft accessible, reusable UI components that meet both technical and UX standards.',
-      'Working with GraphQL (Apollo Client) and REST APIs to integrate backend services, manage application state, and optimize overall frontend performance and maintainability.',
-      'Contributing to backend tasks in Node.js and Express, refactoring modules, extracting services, improving test coverage, and shaping a more modular service-based architecture.',
-      'Using Git for version control with a structured workflow: feature branches, pull requests, and team code reviews.',
-      'Leveraging tools like JOI, Zod, and Mongoose for validation and schema management, with MongoDB and MongoDB Compass for data handling, and Postman for API testing.',
+      'Engineered and maintained Augeo’s core engagement platform web application using modern frontend technologies (React, Next.js, TypeScript, Material UI), ensuring a highly responsive and intuitive user experience for a large user base.',
+      'Collaborated cross-functionally with design, backend, and QA teams to develop accessible, reusable UI components, which significantly streamlined front-end development workflows and consistently met both technical specifications and user experience standards.',
+      'Managed complex application state and optimized frontend performance and maintainability through efficient integration with GraphQL (Apollo Client) and REST APIs, greatly improving user interaction fluidity and code robustness.',
+      'Enhanced backend quality and reliability by actively improving test coverage and mastering new tools like JOI, Zod, and Mongoose for robust validation and schema management. Utilized MongoDB for efficient data persistence and Postman for comprehensive API testing, directly contributing to more stable and reliable services.',
     ],
   },
   {
